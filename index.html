@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HexSchool</title>
     <link rel="stylesheet" href="./CSS/style.css">
+
 </head>
 <body>
     <header>
@@ -21,9 +22,9 @@
         <div>
             <a href="#top" class="logo">六角學院</a> 
             <ul>
-                <li class="menu">首頁</li>
-                <li class="menu">產品介紹</li>
-                <li class="menu">聯絡我們</li>
+                <li class="menu"><a href="#">首頁</a></li>
+                <li class="menu"><a href="#">產品介紹</a></li>
+                <li class="menu"><a href="#">聯絡我們</a></li>
             </ul>
         </div>
     </header>
@@ -37,20 +38,20 @@
             <div class="main-section">
                 <div class="icon-section">
                 <div class="icon">
-                    <img src="./img/html_icon.png" alt="html icon">
+                    <img class="img-icon" src="./img/html_icon.png" alt="html icon">
                     <h3 class="title-icon">Html 5基礎教學</h3>
                     <p class="content-icon">主流前端網站設計的基礎就在六角學院，在這裡不在是填鴨式教學，而是透過實際的範例，瞭解正確的網站開發流程，講師均具有業界開發經驗，讓學員學習業界主流的開發方法。</p>
                 </div>
                 <div class="icon">
-                    <img src="./img/rwd_icon.png" alt="Responsive web design icon">
+                    <img class="img-icon" src="./img/rwd_icon.png" alt="Responsive web design icon">
                     <h3 class="title-icon">響應式網站設計</h3>
                     <p class="content-icon">響應式網站設計 (Responsive web design)，目前大多使用者均是以手機瀏覽的情況下，響應式網站已經是必備的。六角學院將會提供業界響應式開發方法，讓學生瞭解行動版開發技巧。</p>
                 </div>
                 <div class="icon">
-                    <img src="./img/jquery_icon.png" alt="jQuery icon">
+                    <img class="img-icon" src="./img/jquery_icon.png" alt="jQuery icon">
                     <h3 class="title-icon3">jQuery 實戰教學</h3>
                     <p class="text-icon3">本課程有以下特色：</p>
-                    <ul>
+                    <ul class="list-icon3">
                         <li>瞭解變數的使用方法</li>
                         <li>學習並操作DOM</li>
                         <li>學習基本數學運算方法</li>
@@ -60,56 +61,58 @@
                 </div>
                 <!-- 比較表格區域 -->
                 <div>
-                    <h3>線上課程及實體課程的差異</h3>
-                    <table>
+                    <h3 class="title-table">線上課程及實體課程的差異</h3>
+                    <table class="compare-table">
                         <tr>
-                            <th class="tabel-header">項目</th>
-                            <th class="tabel-header">六角學院線上課程</th>
-                            <th class="tabel-header">一般線上課程</th>
-                            <th class="tabel-header">實體課程</th>
+                            <th class="table-header">項目</th>
+                            <th class="table-header">六角學院線上課程</th>
+                            <th class="table-header">一般線上課程</th>
+                            <th class="table-header">實體課程</th>
                         </tr>
                         <tr>
                             <td class="content">費用</td>
-                            <td class="content">較低</td>
-                            <td class="content">較低</td>
+                            <td class="content marked">較低</td>
+                            <td class="content marked">較低</td>
                             <td class="content">較高</td>
                         </tr>
                         <tr>
                             <td class="content">學習效果</td>
                             <td class="content">一般</td>
-                            <td class="content">較低</td>
-                            <td class="content">很好</td>
+                            <td class="content marked">較低</td>
+                            <td class="content marked">很好</td>
                         </tr>
                         <tr>
                             <td class="content">Code Review</td>
-                            <td class="content">有</td>
+                            <td class="content marked">有</td>
                             <td class="content">無</td>
                             <td class="content">不一定</td>
                         </tr>
                         <tr>
                             <td class="content">課程更新速度</td>
-                            <td class="content">普通</td>
-                            <td class="content">普通</td>
+                            <td class="content marked">普通</td>
+                            <td class="content marked">普通</td>
                             <td class="content">較慢</td>
                         </tr>
                         <tr>
                             <td class="content">多次學習</td>
-                            <td class="content">可</td>
+                            <td class="content marked">可</td>
                             <td class="content">可</td>
                             <td class="content">不可</td>
                         </tr>
                         <tr>
                             <td class="content">字幕</td>
-                            <td class="content">有</td>
+                            <td class="content marked">有</td>
                             <td class="content">不一定</td>
                             <td class="content">板書</td>
                         </tr>
                     </table>
                 </div>
+                </div>
                 <!-- 表單問卷區域 -->
-                <div class="survey">
-                    <h4>對我們課程有興趣嗎？<br>歡迎留下您的資料</h4>
-                    <div>
+                <form class="survey">
+                    <h4 class="title-survey">對我們課程有興趣嗎？<br>歡迎留下您的資料</h4>
+                    <div class="survey-area">
+                    <div class="info">
                         <label for="">姓名</label>
                         <input type="text" name="" id="" placeholder="六角講師">
                         <label for="">電話</label>
@@ -117,17 +120,22 @@
                         <label for="">信箱</label>
                         <input type="email" name="" id="" placeholder="example@hexschool.com">
                     </div>
-                    <div>
+                    <div class="text-area">
                         <label for="">備註</label>
                         <textarea name="" id="" cols="30" rows="10"></textarea>
                     </div>
+                    </div>
+                    <div class="button-submit">
                     <button type="submit">送出</button>
-                </div>
-            </div>
+                    </div>
+                </form>
+            
         </main>
-    <footer class="footer">
-        <img src="" alt="">
-        <p>聯絡我們：<a href="service@hexschool.com">service@hexschool.com</a><br>電話：<a href="tel:0987654321">0987654321</a></p>
+    <footer class="footer-area">
+    <div class="footer">
+        <a href="#top" class="logo">六角學院</a> 
+        <p>聯絡我們：<a href="mailto:service@hexschool.com"><span class="contact-info">service@hexschool.com</span></a><br>電話：<a href="tel:0987654321"><span class="contact-info">0987654321</span></a></p>
+    </div>
     </footer>
 
 </body>
