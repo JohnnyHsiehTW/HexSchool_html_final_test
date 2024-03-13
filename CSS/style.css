@@ -1,0 +1,160 @@
+/* CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* CSS Reset */
+
+
+body {
+	font-family: "微軟正黑體" , sans-serif;
+}
+
+/* socialMedia */
+.con-socialMedia {
+	background-color: #F6F6F8;
+}
+.socialMedia ul {
+	display: flex;
+	justify-content: end;
+	align-items: center;
+	width: 75%;
+	gap: 12px;
+	padding: 4px;
+}
+.socialMedia li {
+	display: flex;
+}
+.socialMedia a {
+	text-decoration: none;
+	padding: 4px;
+}
+.facebook {
+	color: #4267B2;
+}
+.twitter {
+	color: #1DA1F2;
+}
+.logo-socialMedia {
+	padding: 4px;
+}
+
+/* header */
+.header {
+	background-color: #fff;
+}
+.header div {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 50%;
+	margin: 0 auto;
+	padding-top: 18px;
+	padding-bottom: 22px;
+}
+.header ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 42px;
+	font-size: 16px;
+	font-weight: 700;
+	color: #00251A;
+}
+.logo {
+	width: 151px;
+	height: 36px;
+	background-image: url("../img/hexschool-logo.png");
+	text-indent: 101%;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+/* background */
+.title-background {
+	background-image: url("../img/header_background.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-size: 36px;
+	font-weight: 700;
+	display: flex;
+	align-items: center;
+	padding: 152px 25%;
+	margin-bottom: 60px;
+}
+
+
+.main-section {
+	margin: 0 auto;
+	width: 50%;
+}
+/* 3個Icon區域 */
+.icon-section {
+	display: flex;
+	gap: 30px;
+	width: 0 auto;
+}
+.icon {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: start;
+	border-radius: 5px;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.16);
+	margin-bottom: 60px;
+}
+.title-icon {
+	font-size: 20px;
+	font-weight: 700;
+	padding: 6px 20px;
+}
+.content-icon {
+	padding: 6px 20px 20px 20px;
+}
+.title-icon3 {
+	font-size: 20px;
+	font-weight: 700;
+	padding: 43px 20px 12px 20px;
+}
+.text-icon3 {
+	text-align: left;
+}
