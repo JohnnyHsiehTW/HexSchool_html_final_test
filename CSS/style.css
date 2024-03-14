@@ -229,14 +229,21 @@ body {
 	padding-bottom: 8px;
 }
 .info input {
+
+}
+#name {
+	margin-bottom: 16px;
+}
+#phone {
 	margin-bottom: 16px;
 }
 .text-area {
 	display: flex;
 	flex-direction: column;
+	justify-content: flex-start;
 }
 .text-area label {
-	padding-bottom: 8px;;
+	padding-bottom: 8px;
 }
 .button-submit {
 	display: flex;
